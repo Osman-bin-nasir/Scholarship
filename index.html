@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Scholarships in India</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Find Your Scholarship</h1>
+        <p>Explore scholarships in India that match your needs.</p>
+    </header>
+
+    <section class="search-section">
+        <h2>Search for Scholarships</h2>
+        <form id="scholarshipForm">
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="all">All Categories</option>
+                <option value="merit">Merit-based</option>
+                <option value="need">Need-based</option>
+                <option value="minority">Minority</option>
+            </select>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="State or City">
+
+            <button type="button" onclick="findScholarships()">Search</button>
+        </form>
+    </section>
+
+    <section class="results-section">
+        <h2>Available Scholarships</h2>
+        <ul id="scholarshipList"></ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Find Scholarships in India</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
